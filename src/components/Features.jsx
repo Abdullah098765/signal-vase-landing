@@ -73,10 +73,9 @@ const Features = () => {
           Empowering Your Trading Experience
         </h1>
         <p>
-          Explore the innovative features that make Signal Vase the ultimate
-          platform for traders and investors. Whether you're sharing signals or
-          following experts, our tools are designed to help you succeed in the
-          dynamic world of trading.
+          {
+            "Explore the innovative features that make Signal Vase the ultimate platform for traders and investors. Whether you're sharing signals or following experts, our tools are designed to help you succeed in the dynamic world of trading."
+          }
         </p>
       </div>
 
