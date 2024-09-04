@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { FiFeather, FiHome, FiMenu, FiStar } from 'react-icons/fi';
 import { AiFillCompass, AiFillHome, AiFillStar, AiOutlineClose, AiOutlineRight } from 'react-icons/ai';
 import { MdContactSupport, MdGroups } from 'react-icons/md';
+import signalVaseLogo from "../../public/signalvase_logo_white.svg";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -48,10 +50,16 @@ export default function Navbar() {
   }, [router]);
 
   return (
-    <>
+    <> 
       <nav className={`p-[2.25rem] flex justify-between items-center fixed top-0 w-full z-50  transition-all duration-300 ${isScrolled && !isSidebarOpen? ' border-gray-700 backdrop-blur-[12px] bg-black bg-opacity-5' : ''}`}>
         <div className="text-white text-2xl font-bold cursor-pointer">
-          EtherealCash
+        <Image
+                        alt="Signal_hub logo"
+                        src={signalVaseLogo}
+                        width={100}
+                        height={100}
+                        className=""
+                    />
         </div>
         <div className="hidden md:flex space-x-8">
           <Link href="#home" className="text-white hover:text-gray-200 flex flex-row items-center gap-1">
