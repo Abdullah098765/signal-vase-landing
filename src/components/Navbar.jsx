@@ -83,8 +83,8 @@ export default function Navbar() {
             {isSidebarOpen ? <AiOutlineClose /> : <FiMenu />}
           </button>
         </div>
-        <a target='_'  href='https://signalvase.com' className="hidden md:block">
-          App
+        <a  href='https://signalvase.com/home?signup=true' className="hidden md:block">
+          Sign Up
         </a>
 
       </nav>
