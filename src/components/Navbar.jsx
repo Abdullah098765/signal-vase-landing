@@ -110,7 +110,7 @@ export default function Navbar() {
             <Link href="#" onClick={toggleSidebar} className="hover:text-gray-200 flex flex-row items-center gap-1">
               <AiOutlineClose /> Close
             </Link>
-            <a target='_'  href='https://signalvase.com' className="mt-4 bg-yellow-500 text-black rounded-md p-2 hover:bg-yellow-600 transition duration-300">App</a>
+            <a   href='https://signalvase.com/home?signup=true' className="mt-4 bg-yellow-500 text-black rounded-md p-2 hover:bg-yellow-600 transition duration-300">Sign Up</a>
           </div>
         </div>
       </>
